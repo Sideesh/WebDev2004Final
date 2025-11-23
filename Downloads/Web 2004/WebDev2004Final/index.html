@@ -3,34 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hinduism Explorer: Interactive Learning Experience</title>
+  <meta name="description" content="Beginner-friendly guide to Hinduism: deities, festivals, philosophy. Ask questions and learn.">
+  <title>Hinduism Explorer</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Hinduism Explorer</h1>
-    <p>Interactive Learning Experience</p>
-    <div class="diya-lamp">
-      <div class="flame"></div>
-      <div class="lamp"></div>
-    </div>
+    <nav>
+      <h1>Hinduism Explorer</h1>
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#deities">Deities</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#ideas">Ideas</a></li>
+        <li><a href="#ask">Ask</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section id="ideas">
-      <h2>Core Concepts</h2>
-      <ul class="concepts">
-        <li><em>Common misunderstanding:</em> "Hindus worship many gods." Most see one divine reality expressed in many forms.</li>
-        <li><strong>Dharma</strong> – Righteous living and duty</li>
-        <li><strong>Karma</strong> – Law of cause and effect</li>
-        <li><strong>Moksha</strong> – Liberation from the cycle of rebirth</li>
-        <li><strong>Atman</strong> – The eternal soul within all beings</li>
-      </ul>
+    <section id="intro">
+      <h2>Welcome</h2>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>I grew up lighting diyas on Diwali, throwing colors on Holi, and hearing stories of Ganesha and Krishna. But when friends asked, "What is Hinduism really about?" — I realized it's not easy to explain.</p>
+          <p>This site is my attempt to make it simple, respectful, and approachable. No preaching. Just clarity.</p>
+        </div>
+        <img src="https://images.stockcake.com/public/1/b/d/1bd63ff3-d1c7-4ab5-a040-e218ea9a5f39_large/illuminated-diya-lamp-stockcake.jpg" alt="A glowing oil lamp (diya) during Diwali" class="intro-img">
+      </div>
     </section>
 
-    <section id="ask">
-      <h2>Ask About Hinduism</h2>
+    <section id="deities">
+      <h2>Major Deities</h2>
+      <div class="deity-cards"></div>
+      <div id="deity-detail" class="deity-detail"></div>
+    </section>
+
+    <section id="festivals">
+      <h2>Festivals</h2>
+      <p>Hinduism celebrates life through vibrant festivals all year long.</p>
+      <table>
+        <thead><tr><th>Festival</th><th>Time</th><th>Theme</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td>Diwali</td><td>Oct/Nov</td><td>Light</td><td>Festival of lights — victory of good over evil.</td></tr>
+          <tr><td>Holi</td><td>Mar</td><td>Color</td><td>Celebrates spring and love with colored powder.</td></tr>
+          <tr><td>Navratri</td><td>Sep/Oct</td><td>Strength</td><td>9 nights honoring the divine feminine.</td></tr>
+          <tr><td>Ganesh Chaturthi</td><td>Aug/Sep</td><td>Wisdom</td><td>Birthday of Ganesha, remover of obstacles.</td></tr>
+          <tr><td>Janmashtami</td><td>Aug</td><td>Devotion</td><td>Birth of Krishna, celebrated with fasting and dance.</td></tr>
+          <tr><td>Makar Sankranti</td><td>Jan</td><td>Harvest</td><td>Kite-flying and sesame sweets mark the sun's journey.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="ideas">
+      <h2>Key Ideas</h2>
+      <ul class="concepts">
+        <li><strong>Dharma</strong>: Living with duty, righteousness, and moral order.</li>
+        <li><strong>Karma</strong>: Actions shape your future — good deeds, good results.</li>
+        <li><strong>Moksha</strong>: Liberation from the cycle of birth and rebirth.</li>
+        <li><strong>Yoga</strong>: Path to union with the divine — not just poses.</li>
+        <li><strong>Ahimsa</strong>: Non-violence in thought, word, and action.</li>
+      </ul>
       <div class="ask-box">
         <textarea id="question" placeholder="e.g. Who is Durga? What happens during Holi?"></textarea>
         <select id="depth">
@@ -43,63 +77,10 @@
       <h3>Past Questions</h3>
       <ul id="history"></ul>
     </section>
-
-    <section id="deities">
-      <h2>Major Deities</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Ganesha"/>
-          <h3>Ganesha</h3>
-          <p><strong>Remover of Obstacles</strong> – The beloved elephant-headed deity, son of Shiva and Parvati. Invoked at the beginning of any new venture, journey, or study. Known as Vighnaharta (obstacle destroyer) and Buddhi Pradayak (bestower of intelligence). His large ears symbolize listening deeply, big head represents wisdom, and small mouth reminds us to speak less. The mouse as his vehicle teaches humility and the ability to reach small places.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Lakshmi"/>
-          <h3>Lakshmi</h3>
-          <p><strong>Goddess of Wealth & Prosperity</strong> – The divine mother who brings both material and spiritual abundance. Born from the churning of the cosmic ocean, she is the consort of Lord Vishnu. Depicted seated on a lotus with gold coins flowing from her hands, she represents purity, generosity, and beauty. Worshipped especially during Diwali, Lakshmi teaches that true wealth comes with dharma and sharing with others.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Shiva"/>
-          <h3>Shiva</h3>
-          <p><strong>The Destroyer & Transformer</strong> – Part of the supreme trinity (Trimurti) with Brahma and Vishnu. Known as Mahadeva (Great God), he is the master of meditation, yoga, and cosmic dance (Tandava). His third eye represents wisdom and destruction of evil, the crescent moon shows control over time, and the Ganges flowing from his hair symbolizes purification. As Nataraja, his dance maintains the cosmic order.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Vishnu"/>
-          <h3>Vishnu</h3>
-          <p><strong>The Preserver</strong> – The protector of the universe who maintains dharma and balance. He descends to earth in various avatars (incarnations) whenever evil grows too strong. His ten main avatars include Rama (ideal king), Krishna (divine teacher), and the coming Kalki. Resting on the cosmic serpent Ananta in the ocean of milk, he represents infinite consciousness and eternal preservation.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Durga"/>
-          <h3>Durga</h3>
-          <p><strong>The Invincible Warrior Goddess</strong> – Created by the combined energies of all gods to defeat the buffalo demon Mahishasura. Riding a lion and wielding divine weapons in her many arms, she represents the triumph of good over evil. During Navratri, she is worshipped in nine forms, embodying feminine power (Shakti). Mother of the universe, protector of the righteous, and destroyer of ego and ignorance.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Saraswati"/>
-          <h3>Saraswati</h3>
-          <p><strong>Goddess of Knowledge & Arts</strong> – The divine embodiment of learning, music, wisdom, and speech. Consort of Brahma, she plays the veena and holds sacred scriptures and a rosary. Riding a white swan (symbol of discernment), dressed in white for purity, she flows like a river of consciousness. Students pray to her before exams and artists seek her blessings for creativity.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Hanuman"/>
-          <h3>Hanuman</h3>
-          <p><strong>Devotion Personified</strong> – The ultimate devotee of Lord Rama, son of the wind god. Known for incredible strength, unwavering loyalty, and selfless service. In the Ramayana, he leaps across the ocean, burns Lanka, and carries an entire mountain to save Lakshmana. Symbol of courage, celibacy (brahmacharya), and bhakti (devotion). Chanting his name is believed to remove fear and grant strength.</p>
-        </div>
-
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1623099413263-7f06bec4ed54?w=400" alt="Krishna"/>
-          <h3>Krishna</h3>
-          <p><strong>The Divine Teacher</strong> – The eighth avatar of Vishnu, whose life is celebrated in the Bhagavad Gita and Mahabharata. As a child, he was mischievous and loving; as a youth, the enchanting flute player; as an adult, the wise counselor on the battlefield of Kurukshetra. Teaches karma yoga (path of action), bhakti yoga (path of devotion), and jnana yoga (path of knowledge). "Yada yada hi dharmasya..." – whenever righteousness declines, he returns.</p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <p>Made for CSE 2004 | Fall 2025 | <a href="https://github.com/Sideesh" target="_blank">Sideesh</a></p>
+    <p>Made for CSE 2004 — Fall 2025 | <a href="https://github.com/sideesh">sideesh</a></p>
   </footer>
 
   <script src="script.js"></script>
