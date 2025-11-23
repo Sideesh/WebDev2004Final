@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Beginner-friendly guide to Hinduism: deities, festivals, philosophy. Ask questions and learn.">
+  <title>Hinduism Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Hinduism Explorer</h1>
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#deities">Deities</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#ideas">Ideas</a></li>
+        <li><a href="#ask">Ask</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Welcome</h2>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>I grew up lighting diyas on Diwali, throwing colors on Holi, and hearing stories of Ganesha and Krishna. But when friends asked, "What is Hinduism really about?" — I realized it's not easy to explain.</p>
+          <p>This site is my attempt to make it simple, respectful, and approachable. No preaching. Just clarity.</p>
+        </div>
+        <img src="https://images.stockcake.com/public/1/b/d/1bd63ff3-d1c7-4ab5-a040-e218ea9a5f39_large/illuminated-diya-lamp-stockcake.jpg" alt="A glowing oil lamp (diya) during Diwali" class="intro-img">
+      </div>
+    </section>
+
+    <section id="deities">
+      <h2>Major Deities</h2>
+      <div class="deity-cards"></div>
+      <div id="deity-detail" class="deity-detail"></div>
+    </section>
+
+    <section id="festivals">
+      <h2>Festivals</h2>
+      <p>Hinduism celebrates life through vibrant festivals all year long.</p>
+      <table>
+        <thead><tr><th>Festival</th><th>Time</th><th>Theme</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td>Diwali</td><td>Oct/Nov</td><td>Light</td><td>Festival of lights — victory of good over evil.</td></tr>
+          <tr><td>Holi</td><td>Mar</td><td>Color</td><td>Celebrates spring and love with colored powder.</td></tr>
+          <tr><td>Navratri</td><td>Sep/Oct</td><td>Strength</td><td>9 nights honoring the divine feminine.</td></tr>
+          <tr><td>Ganesh Chaturthi</td><td>Aug/Sep</td><td>Wisdom</td><td>Birthday of Ganesha, remover of obstacles.</td></tr>
+          <tr><td>Janmashtami</td><td>Aug</td><td>Devotion</td><td>Birth of Krishna, celebrated with fasting and dance.</td></tr>
+          <tr><td>Makar Sankranti</td><td>Jan</td><td>Harvest</td><td>Kite-flying and sesame sweets mark the sun's journey.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="ideas">
+      <h2>Key Ideas</h2>
+      <ul class="concepts">
+        <li><strong>Dharma</strong>: Living with duty, righteousness, and moral order.</li>
+        <li><strong>Karma</strong>: Actions shape your future — good deeds, good results.</li>
+        <li><strong>Moksha</strong>: Liberation from the cycle of birth and rebirth.</li>
+        <li><strong>Yoga</strong>: Path to union with the divine — not just poses.</li>
+        <li><strong>Ahimsa</strong>: Non-violence in thought, word, and action.</li>
+      </ul>
+      <div class="ask-box">
+        <textarea id="question" placeholder="e.g. Who is Durga? What happens during Holi?"></textarea>
+        <select id="depth">
+          <option value="simple">Explain simply</option>
+          <option value="detailed">Go deeper</option>
+        </select>
+        <button id="ask-btn">Get Answer</button>
+      </div>
+      <div id="answer" class="answer"></div>
+      <h3>Past Questions</h3>
+      <ul id="history"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for CSE 2004 — Fall 2025 | <a href="https://github.com/sideesh">sideesh</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
